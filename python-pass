@@ -1,0 +1,17 @@
+a=[]
+def Single_Func():
+    n=int(input("Enter X value: "))
+    for i in range(0,n):
+        l=int(input())
+        a.append(l)
+
+    print (" \n ")
+
+    for i in range(0,n):
+
+        if (a[i] % 2) == 0:
+            print("{0} is Even".format(a[i]))
+        else:
+            print("{0} is Odd".format(a[i]))
+            
+Single_Func()
