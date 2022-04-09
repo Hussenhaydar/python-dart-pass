@@ -1,0 +1,66 @@
+//Q1
+void main() {
+//.now() named constructor can't be const.
+
+final hour =  DateTime.now().hour;
+
+final minute =  DateTime.now().minute;
+
+  print('The Time now is [ $hour:$minute ]');
+}
+//-------------------------
+//Q2
+abstract class Animal {
+
+  void printName();
+  void printSound();
+}
+class Dog extends Animal {
+
+  void printName() {
+    print("Dog");
+  }
+  void printSound() {
+    print("barking");
+  }
+}
+
+class Cat extends Animal {
+
+  void printName() {
+    print("Cat");
+  }
+  void printSound() {
+    print("Meaw");
+  }
+}
+
+class Cow extends Animal {
+
+  void printName() {
+    print("Cow");
+  }
+  void printSound() {
+    print("Moo");
+  }
+}
+void spacer(){
+  print('-------------');
+}
+void main() {
+  var cat = Cat(), dog = Dog(), cow = Cow();
+
+  
+  dog.printName();
+  dog.printSound();
+  spacer();
+
+  cow.printName();
+  cow.printSound();
+  spacer();
+
+  cat.printName();
+  cat.printSound();
+
+}
+
